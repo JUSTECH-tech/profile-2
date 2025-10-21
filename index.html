@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Oloyede Daniel — Home</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">XLIT</a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="main" tabindex="-1">
+    <article data-testid="test-profile-card" class="profile-card">
+      <figure class="avatar">
+        <img
+          src="IMG_5971.JPG"
+          alt="Profile picture of Oloyede Daniel Oluwapelumi"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <div class="details">
+        <header>
+          <h1 data-testid="test-user-name">Oloyede Daniel</h1>
+        </header>
+
+        <p data-testid="test-user-bio" class="bio">
+          A Creative Frontend Developer crafting responsive, accessible, and visually captivating web
+          applications using HTML, CSS, JavaScript and React.
+        </p>
+
+        <div class="time-container" aria-live="polite" aria-atomic="true">
+          <h2>Current Time</h2>
+          <div class="time" id="time" data-testid="test-user-time">0</div>
+          <div class="date" id="date">Loading...</div>
+        </div>
+
+        <nav>
+        <ul data-testid="test-user-social-links" class="social-links">
+            <li>
+            <a href="https://t.co/7sNs604RRp" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            </li>
+            <li>
+            <a href="" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            </li>
+            <li>
+            <a href="https://t.co/POQC391H67" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            </li>
+        </ul>
+        </nav>
+
+
+     <div class="info-box" id="hobbies-box">
+        <section>
+            <h3>Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+            <li>Building Websites</li>
+            <li>Listening to Music</li>
+            <li>Gaming</li>
+            <li>Exploring Tech</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="info-box" id="dislikes-box">
+        <section>
+            <h3>Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+            <li>Procrastination</li>
+            <li>Slow Internet</li>
+            <li>Messy Code</li>
+            </ul>
+        </section>
+    </div>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Oloyede Daniel </small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

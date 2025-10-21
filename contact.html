@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Oloyede Daniel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">XLIT</a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="contact-main" tabindex="-1">
+    <header class="page-header">
+      <h1>Contact Me</h1>
+      <p class="lead">Send a message..I’ll get back as soon as I can.</p>
+    </header>
+
+    <form id="contact-form" class="contact-form" novalidate>
+      <div class="form-row">
+        <label for="contact-name">Full name</label>
+        <input id="contact-name" name="name" type="text" data-testid="test-contact-name" required aria-required="true" aria-describedby="error-name" />
+        <div id="error-name" class="form-error" role="alert" aria-live="assertive" data-testid="test-contact-error-name"></div>
+      </div>
+
+      <div class="form-row">
+        <label for="contact-email">Email</label>
+        <input id="contact-email" name="email" type="email" data-testid="test-contact-email" required aria-required="true" aria-describedby="error-email" />
+        <div id="error-email" class="form-error" role="alert" aria-live="assertive" data-testid="test-contact-error-email"></div>
+      </div>
+
+      <div class="form-row">
+        <label for="contact-subject">Subject</label>
+        <input id="contact-subject" name="subject" type="text" data-testid="test-contact-subject" required aria-required="true" aria-describedby="error-subject" />
+        <div id="error-subject" class="form-error" role="alert" aria-live="assertive" data-testid="test-contact-error-subject"></div>
+      </div>
+
+      <div class="form-row">
+        <label for="contact-message">Message</label>
+        <textarea id="contact-message" name="message" rows="6" data-testid="test-contact-message" required aria-required="true" aria-describedby="error-message"></textarea>
+        <div id="error-message" class="form-error" role="alert" aria-live="assertive" data-testid="test-contact-error-message"></div>
+      </div>
+
+      <div class="form-row actions">
+        <button id="contact-submit" data-testid="test-contact-submit" type="submit">Send message</button>
+        <div id="contact-success" class="form-success" role="status" aria-live="polite" data-testid="test-contact-success" hidden></div>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year-contact"></span> Oloyede Daniel</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

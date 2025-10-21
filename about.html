@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me - Oloyede Daniel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main data-testid="test-about-page" class="about-container">
+    <nav class="page-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link active">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <header class="about-header">
+      <h1>About Me</h1>
+      <p>Reflections, goals, and notes for future self.</p>
+    </header>
+
+    <section class="about-box" data-testid="test-about-bio">
+      <h2>Bio</h2>
+      <p>I'm a frontend developer learning and building modern, responsive web apps. I enjoy creating accessible experiences and improving my UI/UX skills.</p>
+    </section>
+
+    <section class="about-box" data-testid="test-about-goals">
+      <h2>Goals in this program</h2>
+      <ul>
+        <li>Master responsive and accessible UI patterns</li>
+        <li>Ship clean, modular code</li>
+        <li>Create production-ready portfolio pieces</li>
+      </ul>
+    </section>
+
+    <section class="about-box" data-testid="test-about-confidence">
+      <h2>Areas of low confidence</h2>
+      <p>I feel less confident with backend auth flows, deployment pipelines, and advanced state management in complex React apps — areas I'd like to improve.</p>
+    </section>
+
+    <section class="about-box" data-testid="test-about-future-note">
+      <h2>Note to future self</h2>
+      <p>Keep iterating on UX, ask for feedback early, and prioritize accessibility from the start.</p>
+    </section>
+
+    <section class="about-box" data-testid="test-about-extra">
+      <h2>Extra thoughts</h2>
+      <p>Build small projects frequently, break down complex features, and contribute to open-source when possible.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year-about"></span> Oloyede Daniel</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
